@@ -13,6 +13,6 @@ Los tres tipos de análisis realizados son:
 
 Análisis EMG: Se analizaría la actividad EMG para identificar patrones relacionados con diferentes tipos e intensidades de movimiento, evaluando la activación muscular.
 
-Análisis ECG: Se examinaría la actividad cardíaca para detectar cambios en la frecuencia cardíaca o en la variabilidad de la frecuencia cardíaca relacionados con la actividad física.
+Análisis ECG: Se examinaría la actividad cardíaca en reposo, comparando las pulsaciones de cada uno de los integrantes del grupo.
 
 Análisis EDA: Se evaluaría la actividad electrodermal para investigar las respuestas emocionales o de estrés durante los diferentes movimientos del brazo.

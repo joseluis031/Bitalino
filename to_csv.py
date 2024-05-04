@@ -49,8 +49,7 @@ def graficar_ecg(nombre_archivo_csv):
     plt.figure(figsize=(20, 4))  # Configura el tamaño de la gráfica para que sea más ancha
     plt.plot(datos['Numero_de_Fila'], datos['Septima_Columna'], linestyle='-', color='black')
     plt.title('Electrocardiograma Simulado')
-    plt.xlabel('Número de Fila')
-    plt.ylabel('Séptima Columna')
+    plt.ylabel('Intensidad segundo puerto')
     plt.grid(True)
     plt.tight_layout()
     

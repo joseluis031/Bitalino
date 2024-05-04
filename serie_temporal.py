@@ -25,15 +25,15 @@ D = 0
 Q = 1
 s = 6  # Estacionalidad mensual
 
-modelo_arima = ARIMA(serie_temporal, order=(p, d, q))
-resultado_arima = modelo_arima.fit()
+#modelo_arima = ARIMA(serie_temporal, order=(p, d, q))
+#resultado_arima = modelo_arima.fit()
 
 # Ajustar el modelo SARIMA
 modelo_sarima = SARIMAX(serie_temporal, order=(p, d, q), seasonal_order=(P, D, Q, s))
 resultado_sarima = modelo_sarima.fit()
 
 # Realizar predicciones
-predicciones_arima = resultado_arima.forecast(steps=10)
+#predicciones_arima = resultado_arima.forecast(steps=100)
 predicciones_sarima = resultado_sarima.forecast(steps=10)
 
 # Visualizar las predicciones
@@ -42,3 +42,6 @@ plt.plot(serie_temporal, label='Original')
 plt.plot(predicciones_sarima, label='SARIMA Predictions')
 plt.legend()
 plt.show()
+
+# añademe los 10 puntos de la prediccion al mismo csv y vuelve a realizar el proceso
+

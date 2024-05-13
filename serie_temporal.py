@@ -36,12 +36,27 @@ resultado_sarima = modelo_sarima.fit()
 #predicciones_arima = resultado_arima.forecast(steps=100)
 predicciones_sarima = resultado_sarima.forecast(steps=10)
 
+#printea los resultados
+print(predicciones_sarima)
+
+# añadir los resultados de la prediccion a un csv predicciones.csv con su respectivo indice
+
+predicciones_sarima.to_csv('predicciones.csv', index=True)
+
+
+
+
+# añadir los datos de predicciones a la serie temporal
+
+
+
+
+
+
 # Visualizar las predicciones
 plt.plot(serie_temporal, label='Original')
 # plt.plot(predicciones_arima, label='ARIMA Predictions')
 plt.plot(predicciones_sarima, label='SARIMA Predictions')
 plt.legend()
 plt.show()
-
-# añademe los 10 puntos de la prediccion al mismo csv y vuelve a realizar el proceso
 
